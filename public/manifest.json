@@ -1,0 +1,16 @@
+{
+  "name": "KTM ACADEMY",
+  "short_name": "KTM Academy",
+  "description": "Solutions digitales & immersives pour la formation métier",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#151A20",
+  "theme_color": "#151A20",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

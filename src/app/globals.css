@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+@theme {
+  --color-encre: #151A20;
+  --color-encre-profond: #0C1116;
+  --color-acier: #28323C;
+  --color-craie: #EFEAE2;
+  --color-orange-ktm: #FE640E;
+  --color-ambre: #FF8812;
+  --color-bleu-acier: #5C7C93;
+  --color-gris-atelier: #7C8894;
+
+  --font-display: var(--font-archivo), sans-serif;
+  --font-body: var(--font-instrument), sans-serif;
+  --font-data: var(--font-martian), monospace;
+}
+
+:root {
+  --encre: #151A20;
+  --encre-profond: #0C1116;
+  --acier: #28323C;
+  --craie: #EFEAE2;
+  --orange-ktm: #FE640E;
+  --ambre: #FF8812;
+  --bleu-acier: #5C7C93;
+  --gris-atelier: #7C8894;
+}
+
+/* Hard constraint: Pure #FFFFFF is forbidden site-wide */
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--encre);
+  color: var(--craie);
+  font-family: var(--font-body);
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: var(--encre);
+  color: var(--craie);
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+  
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Visible keyboard focus indicators */
+*:focus-visible {
+  outline: 2px solid var(--bleu-acier);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Selection */
+::selection {
+  background-color: var(--orange-ktm);
+  color: var(--craie);
+}
+
+/* Typography styles */
+.font-archivo-display {
+  font-family: var(--font-archivo), sans-serif;
+  font-variation-settings: 'wdth' 120, 'wght' 650;
+  letter-spacing: -0.02em;
+}
+
+.text-hero-headline {
+  font-family: var(--font-archivo), sans-serif;
+  font-variation-settings: 'wdth' 122, 'wght' 700;
+  letter-spacing: -0.02em;
+  font-size: clamp(2.4rem, 5vw, 4.8rem);
+  line-height: 1.05;
+  text-transform: none;
+}
+
+.text-section-title {
+  font-family: var(--font-archivo), sans-serif;
+  font-variation-settings: 'wdth' 118, 'wght' 650;
+  letter-spacing: -0.02em;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.05;
+}
+
+.max-prose-width {
+  max-width: 66ch;
+}
