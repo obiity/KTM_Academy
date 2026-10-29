@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useEffect, useRef, useState } from 'react';
-import { HERO_TRACE_PATH, HERO_MARKERS } from '@/lib/grid';
+import { HERO_TRACE_PATH, HERO_MARKERS, MarkerPoint } from '@/lib/grid';
 import { isReducedMotion } from '@/lib/motion';
 
 export const Trace: React.FC = () => {
@@ -54,7 +54,7 @@ export const Trace: React.FC = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-full min-h-[520px] lg:min-h-[640px] xl:min-h-[720px] flex items-center justify-center p-2 lg:p-4 overflow-visible">
+    <div className="relative w-full h-full min-h-[380px] sm:min-h-[460px] lg:min-h-[520px] flex items-center justify-center p-2 lg:p-4 overflow-visible">
       {/* Background Grid Motif */}
       <div
         className="absolute inset-0 opacity-20 pointer-events-none"
@@ -66,7 +66,7 @@ export const Trace: React.FC = () => {
       />
 
       {/* Enlarged SVG Trace Curve & Loop Animation */}
-      <div className="w-full h-auto transform-gpu scale-105 sm:scale-110 lg:scale-115 xl:scale-120 transition-transform duration-500">
+      <div className="w-full h-auto transform-gpu scale-100 sm:scale-105 lg:scale-110 transition-transform duration-500">
         <svg
           viewBox="0 0 1000 520"
           className="w-full h-auto overflow-visible relative z-10 drop-shadow-2xl"
@@ -134,7 +134,7 @@ export const Trace: React.FC = () => {
           </g>
 
           {/* 4 Stage Nodes (Apprendre, Jouer, Pratiquer, Maîtriser) */}
-          {HERO_MARKERS.map((m, idx) => {
+          {HERO_MARKERS.map((m: MarkerPoint, idx: number) => {
             const isActive = activeStep === idx;
             const stepNum = `0${idx + 1}`;
             const labelOffsetY = idx % 2 === 0 ? -48 : 44;

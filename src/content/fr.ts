@@ -479,19 +479,19 @@ export const contentFr = {
     intro: "Une équipe complémentaire réunissant pilotage, développement technologique et création d'expériences pédagogiques.",
     membres: [
       {
-        nom: "Mame Diarra Bousso Diop",
-        role: "Directrice générale",
-        perimetre: "Stratégie, finance, partenariats et pilotage de projets."
+        nom: "Mame Diarra Bousso DIOP",
+        role: "Directrice Générale",
+        perimetre: "Stratégie globale, développement institutionnel et partenariats."
       },
       {
-        nom: "Vieux Moussa Diédhiou",
-        role: "Directeur technique",
-        perimetre: "Plateformes, applications et architecture technique."
+        nom: "Ousmane BITÉYE",
+        role: "Directeur Artistique",
+        perimetre: "Direction artistique, UI/UX et scénarisation graphique immersive."
       },
       {
-        nom: "Ousmane Bitèye",
-        role: "Directeur artistique",
-        perimetre: "Scénarisation immersive, 3D et serious games."
+        nom: "Vieux Moussa DIÉDHIOU",
+        role: "Directeur Technique",
+        perimetre: "Architecture logicielle, plateformes et simulateurs de formation."
       }
     ],
     cloture: "Une gouvernance légère, agile et orientée vers la qualité des livrables et l'impact des formations.",

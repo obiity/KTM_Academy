@@ -1,7 +1,7 @@
 export interface MarkerPoint {
   id: string;
   label: string;
-  x: number; // percentage or SVG coordinate
+  x: number;
   y: number;
   size: number;
   satellites: Array<{ dx: number; dy: number; size: number }>;
@@ -55,19 +55,11 @@ export const HERO_MARKERS: MarkerPoint[] = [
 ];
 
 export const SECTION_LIST = [
-  { id: "hero", index: "01", name: "Accueil" },
-  { id: "positionnement", index: "02", name: "Positionnement" },
-  { id: "services", index: "03", name: "Services" },
-  { id: "organisations", index: "04", name: "Organisations" },
-  { id: "expertises", index: "05", name: "Expertises" },
-  { id: "modele", index: "06", name: "Modèle" },
-  { id: "modalites", index: "07", name: "Modalités" },
-  { id: "immersif", index: "08", name: "Immersif" },
-  { id: "ingenierie", index: "09", name: "Ingénierie" },
-  { id: "hub-tech", index: "10", name: "Pôle-Tech / Hub-Tech" },
-  { id: "solutions", index: "11", name: "Solutions" },
-  { id: "capacites", index: "12", name: "Capacités" },
-  { id: "perspectives", index: "13", name: "Perspectives" },
-  { id: "equipe", index: "14", name: "Équipe" },
-  { id: "contact", index: "15", name: "Contact" }
+  { id: "hero", index: "01", name: "Promesse" },
+  { id: "pourquoi-ktm", index: "02", name: "Pourquoi KTM" },
+  { id: "solutions", index: "03", name: "Solutions" },
+  { id: "voksia", index: "04", name: "VOKSIA" },
+  { id: "preuves", index: "05", name: "Preuves" },
+  { id: "a-propos", index: "06", name: "À propos" },
+  { id: "contact", index: "07", name: "Diagnostic" }
 ];

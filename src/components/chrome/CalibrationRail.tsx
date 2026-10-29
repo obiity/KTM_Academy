@@ -39,7 +39,7 @@ export const CalibrationRail: React.FC = () => {
     <>
       {/* Desktop Fixed Left Calibration Rail (72px) */}
       <aside
-        className="hidden lg:flex fixed top-0 left-0 bottom-0 w-[72px] bg-[#151A20] border-r border-[#28323C] z-30 flex-col justify-between items-center py-8 select-none"
+        className="hidden lg:flex fixed top-0 left-0 bottom-0 w-[72px] bg-[#0A1017] border-r border-[#28323C] z-30 flex-col justify-between items-center py-8 select-none"
         aria-label="Rail de calibration et navigation"
       >
         {/* Top tick mark + current index */}
@@ -56,24 +56,24 @@ export const CalibrationRail: React.FC = () => {
             className="absolute top-0 left-0 w-full bg-[#FE640E] transition-all duration-150 ease-out"
             style={{ height: `${scrollPercent}%` }}
           />
-          {/* Ticks along rail */}
+          {/* Ticks for 5 sections */}
           <div className="absolute top-[20%] left-[-4px] w-2 h-[1px] bg-[#7C8894]/40" />
           <div className="absolute top-[40%] left-[-4px] w-2 h-[1px] bg-[#7C8894]/40" />
           <div className="absolute top-[60%] left-[-4px] w-2 h-[1px] bg-[#7C8894]/40" />
           <div className="absolute top-[80%] left-[-4px] w-2 h-[1px] bg-[#7C8894]/40" />
         </div>
 
-        {/* Bottom tick mark + total sections count */}
+        {/* Bottom tick mark + total sections count (07) */}
         <div className="flex flex-col items-center gap-2">
           <span className="font-mono text-[10px] text-[#7C8894]">
-            15
+            07
           </span>
           <div className="w-3 h-[1px] bg-[#7C8894]" />
         </div>
       </aside>
 
       {/* Mobile / Tablet 4px Top Scroll Progress Bar (< 1024px) */}
-      <div className="lg:hidden fixed top-0 left-0 right-0 h-[4px] bg-[#28323C] z-50">
+      <div className="lg:hidden fixed top-0 left-0 right-0 h-[3px] bg-[#28323C] z-50">
         <div
           className="h-full bg-gradient-to-r from-[#FE640E] to-[#FF8812] transition-all duration-150 ease-out"
           style={{ width: `${scrollPercent}%` }}
