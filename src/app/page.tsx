@@ -5,6 +5,7 @@ import { SolutionsV2 } from '@/components/v2/SolutionsV2';
 import { VoksiaSection } from '@/components/v2/VoksiaSection';
 import { PreuvesV2 } from '@/components/v2/PreuvesV2';
 import { AProposV2 } from '@/components/v2/AProposV2';
+import { PartenairesV2 } from '@/components/v2/PartenairesV2';
 import { DiagnosticContactV2 } from '@/components/v2/DiagnosticContactV2';
 
 export default function HomePage() {
@@ -28,7 +29,10 @@ export default function HomePage() {
       {/* 06. SECTION 06 — VISION, VALEURS & ÉQUIPE (À PROPOS) */}
       <AProposV2 />
 
-      {/* 07. SECTION 07 — QUEL EST VOTRE DÉFI DE FORMATION ? (DIAGNOSTIC & CONTACT) */}
+      {/* 07. SECTION 07 — ÉCOSYSTÈME & PARTENAIRES */}
+      <PartenairesV2 />
+
+      {/* 08. SECTION 08 — QUEL EST VOTRE DÉFI DE FORMATION ? (DIAGNOSTIC & CONTACT) */}
       <DiagnosticContactV2 />
     </>
   );

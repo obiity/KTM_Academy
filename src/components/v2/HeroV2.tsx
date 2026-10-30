@@ -31,11 +31,11 @@ export const HeroV2: React.FC = () => {
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[450px] bg-[#FE640E]/[0.06] rounded-full blur-[140px] pointer-events-none z-[1]" />
       <div className="absolute -top-24 right-0 w-[500px] h-[400px] bg-[#5C7C93]/[0.08] rounded-full blur-[120px] pointer-events-none z-[1]" />
 
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 w-full relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+      <div className="max-w-[1380px] mx-auto px-6 lg:px-12 w-full relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-12 xl:gap-16 items-center">
           
           {/* Left Column (6 cols): Editorial Content Conforming to Brief V2 */}
-          <div className="lg:col-span-6 space-y-6">
+          <div className="lg:col-span-6 space-y-6 relative z-20">
             
             {/* Surtitre Officiel Brief */}
             <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-[#151A20] border border-[#28323C] text-xs font-medium text-[#FE640E] tracking-wide">
@@ -58,10 +58,10 @@ export const HeroV2: React.FC = () => {
 
             {/* Public Cible Officiel Brief */}
             <div className="pt-2 pb-1">
-              <div className="inline-flex items-center gap-2 text-sm text-[#7C8894] font-medium bg-[#151A20]/80 px-4 py-2 rounded-[2px] border border-[#28323C]/60">
+              <div className="inline-flex items-center gap-2.5 text-[13px] xl:text-sm text-[#9AA6B2] font-medium bg-[#151A20]/85 backdrop-blur-sm px-4 py-2.5 rounded-[2px] border border-[#28323C]/60 md:whitespace-nowrap">
                 <CheckCircle2 className="w-4 h-4 text-[#FE640E] shrink-0" />
                 <span>
-                  <strong className="text-[#EFEAE2] font-semibold">Pour :</strong> entreprises, institutions, écoles et centres de formation.
+                  <strong className="text-[#EFEAE2] font-semibold">Pour :</strong> Entreprises, institutions publiques, centres de formation, ONG et partenaires au développement.
                 </span>
               </div>
             </div>

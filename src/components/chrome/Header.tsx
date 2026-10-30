@@ -33,7 +33,8 @@ export const Header: React.FC = () => {
     { label: 'Solutions', href: '#solutions' },
     { label: 'VOKSIA', href: '#voksia' },
     { label: 'Réalisations', href: '#preuves' },
-    { label: 'À propos', href: '#a-propos' }
+    { label: 'À propos', href: '#a-propos' },
+    { label: 'Partenaires', href: '#partenaires' }
   ];
 
   return (
@@ -120,7 +121,7 @@ export const Header: React.FC = () => {
               <ArrowRight className="w-4 h-4" />
             </a>
             <p className="text-center text-xs text-[#7C8894]">
-              KTM Skills Academy · Dakar, Castor, Lot 11
+              KTM Skills Academy · Dakar
             </p>
           </div>
         </div>

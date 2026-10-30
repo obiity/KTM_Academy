@@ -9,7 +9,7 @@ export default function AProposPage() {
   const equipe = [
     {
       nom: "Mame Diarra Bousso DIOP",
-      role: "Directrice Générale",
+      role: "CEO et Fondatrice",
       photo: "/Mame Diarra Bousso Diop.jpg",
       bio: "Pilote la stratégie globale, le développement institutionnel et la qualité d'impact des programmes de formation de KTM Skills Academy."
     },
@@ -22,7 +22,7 @@ export default function AProposPage() {
     {
       nom: "Vieux Moussa DIÉDHIOU",
       role: "Directeur Technique",
-      photo: "/Vieux Moussa Diédhiou.JPG",
+      photo: "/Vieux_Moussa_Diedhiou.jpg",
       bio: "Supervise l'architecture technologique, l'ingénierie logicielle, les simulateurs en réalité mixte et l'environnement VOKSIA."
     }
   ];
@@ -66,7 +66,7 @@ export default function AProposPage() {
               Ancrage local à Dakar
             </h3>
             <p className="text-sm text-[#EFEAE2]/80 leading-relaxed">
-              Implantée à Dakar (Castor), notre équipe comprend les spécificités des entreprises locales, les contraintes de connectivité et les besoins réels des filières.
+              Implantée à Dakar, notre équipe comprend les spécificités des entreprises locales, les contraintes de connectivité et les besoins réels des filières.
             </p>
           </div>
 
@@ -129,7 +129,7 @@ export default function AProposPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm text-[#EFEAE2]/80">
             <div className="space-y-3">
               <p><strong>Entité :</strong> KTM Skills Academy</p>
-              <p><strong>Siège social :</strong> Dakar, Castor, Lot 11, Sénégal</p>
+              <p><strong>Siège social :</strong> Dakar</p>
               <p><strong>Contact électronique :</strong> <a href="mailto:ktmacademysn@gmail.com" className="text-[#FE640E]">ktmacademysn@gmail.com</a></p>
               <p><strong>Téléphone :</strong> +221 77 384 00 08</p>
             </div>

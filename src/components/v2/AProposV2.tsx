@@ -8,7 +8,7 @@ export const AProposV2: React.FC = () => {
   const equipe = [
     {
       nom: "Mame Diarra Bousso DIOP",
-      role: "Directrice Générale",
+      role: "CEO et Fondatrice",
       photo: "/Mame Diarra Bousso Diop.jpg",
       objectPosition: "object-[center_top]"
     },
@@ -21,8 +21,8 @@ export const AProposV2: React.FC = () => {
     {
       nom: "Vieux Moussa DIÉDHIOU",
       role: "Directeur Technique",
-      photo: "/Vieux Moussa Diédhiou.JPG",
-      objectPosition: "object-[center_top]"
+      photo: "/Vieux_Moussa_Diedhiou.jpg",
+      objectPosition: "object-center"
     }
   ];
 
@@ -64,7 +64,7 @@ export const AProposV2: React.FC = () => {
               Ancrage local à Dakar
             </h3>
             <p className="text-sm text-[#EFEAE2]/80 leading-relaxed">
-              Implantée à Dakar (Castor), notre équipe comprend les spécificités des entreprises locales, les contraintes de connectivité et les besoins réels des filières.
+              Implantée à Dakar, notre équipe comprend les spécificités des entreprises locales, les contraintes de connectivité et les besoins réels des filières.
             </p>
           </div>
 

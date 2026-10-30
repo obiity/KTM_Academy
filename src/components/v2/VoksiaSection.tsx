@@ -22,7 +22,8 @@ import {
   Eye,
   Grid,
   Check,
-  Compass
+  Compass,
+  Wrench
 } from 'lucide-react';
 
 export const VoksiaSection: React.FC = () => {
@@ -190,7 +191,7 @@ export const VoksiaSection: React.FC = () => {
       key: "vision",
       title: "Hero Banner & Vision Métiers",
       icon: Sparkles,
-      desc: "Accès immédiat aux 4 piliers de VOKSIA : Apprendre, Pratiquer, Certifier et S'insérer.",
+      desc: "Accès immédiat aux 5 étapes de VOKSIA : Se former, Pratiquer, Certifier, S’immerger et S’insérer.",
       preview: null
     },
     {
@@ -230,13 +231,13 @@ export const VoksiaSection: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
 
         {/* Header Section */}
-        <div className="flex flex-col items-center text-center max-w-4xl mx-auto mb-16 space-y-5">
+        <div className="flex flex-col items-center text-center max-w-5xl mx-auto mb-16 space-y-5">
           <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-[#151A20]/90 border border-[#FE640E]/40 text-xs font-mono uppercase tracking-widest text-[#FE640E] shadow-lg shadow-[#FE640E]/10">
             <span className="w-2 h-2 rounded-full bg-[#FE640E] animate-pulse" />
             <span>Plateforme Numérique & LMS Propriétaire · KTM Skills Academy</span>
           </div>
 
-          <h2 className="font-archivo-display text-3xl sm:text-4xl lg:text-5xl font-black text-[#EFEAE2] tracking-tight leading-[1.12]">
+          <h2 className="font-archivo-display text-3xl sm:text-4xl lg:text-5xl font-black text-[#EFEAE2] tracking-tight leading-[1.12] max-w-4xl">
             VOKSIA : L’écosystème digital des{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FE640E] via-[#FF8812] to-[#FFB066]">
               métiers techniques d’avenir.
@@ -247,15 +248,15 @@ export const VoksiaSection: React.FC = () => {
             « Apprendre aujourd’hui, bâtir demain. » Des formations pratiques, interactives et certifiantes conçues pour l'Afrique de l'Ouest, avec passerelle directe vers la Réalité Virtuelle.
           </p>
 
-          {/* 4 Interactive Pillars Circuit */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 w-full max-w-3xl">
+          {/* 5 Interactive Steps Circuit */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 pt-4 w-full">
             <div className="p-3 bg-[#151A20]/80 border border-[#28323C] rounded-[2px] flex items-center gap-2.5">
               <span className="w-7 h-7 rounded-full bg-[#FE640E]/10 border border-[#FE640E]/30 flex items-center justify-center shrink-0">
                 <BookOpen className="w-3.5 h-3.5 text-[#FE640E]" />
               </span>
               <div className="text-left">
                 <span className="block text-xs font-bold text-[#EFEAE2]">Se former</span>
-                <span className="block text-[10px] text-[#7C8894]">Microlearning mobile</span>
+                <span className="block text-[10px] text-[#7C8894] leading-snug">Microlearning mobile</span>
               </div>
             </div>
 
@@ -265,7 +266,7 @@ export const VoksiaSection: React.FC = () => {
               </span>
               <div className="text-left">
                 <span className="block text-xs font-bold text-[#EFEAE2]">Pratiquer</span>
-                <span className="block text-[10px] text-[#7C8894]">Simulations 3D & VR</span>
+                <span className="block text-[10px] text-[#7C8894] leading-snug">Simulations 3D & VR</span>
               </div>
             </div>
 
@@ -275,17 +276,27 @@ export const VoksiaSection: React.FC = () => {
               </span>
               <div className="text-left">
                 <span className="block text-xs font-bold text-[#EFEAE2]">Certifier</span>
-                <span className="block text-[10px] text-[#7C8894]">Badges vérifiables</span>
+                <span className="block text-[10px] text-[#7C8894] leading-snug">Badges & certifications</span>
               </div>
             </div>
 
             <div className="p-3 bg-[#151A20]/80 border border-[#28323C] rounded-[2px] flex items-center gap-2.5">
               <span className="w-7 h-7 rounded-full bg-[#FE640E]/10 border border-[#FE640E]/30 flex items-center justify-center shrink-0">
+                <Wrench className="w-3.5 h-3.5 text-[#FE640E]" />
+              </span>
+              <div className="text-left">
+                <span className="block text-xs font-bold text-[#EFEAE2]">S’immerger</span>
+                <span className="block text-[10px] text-[#7C8894] leading-snug">Bootcamps & ateliers pratiques</span>
+              </div>
+            </div>
+
+            <div className="p-3 bg-[#151A20]/80 border border-[#28323C] rounded-[2px] flex items-center gap-2.5 sm:col-span-2 lg:col-span-1">
+              <span className="w-7 h-7 rounded-full bg-[#FE640E]/10 border border-[#FE640E]/30 flex items-center justify-center shrink-0">
                 <Compass className="w-3.5 h-3.5 text-[#FE640E]" />
               </span>
               <div className="text-left">
-                <span className="block text-xs font-bold text-[#EFEAE2]">S'insérer</span>
-                <span className="block text-[10px] text-[#7C8894]">Bootcamps terrain</span>
+                <span className="block text-xs font-bold text-[#EFEAE2]">S’insérer</span>
+                <span className="block text-[10px] text-[#7C8894] leading-snug">Emploi & entrepreneuriat</span>
               </div>
             </div>
           </div>

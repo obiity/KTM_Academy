@@ -480,7 +480,7 @@ export const contentFr = {
     membres: [
       {
         nom: "Mame Diarra Bousso DIOP",
-        role: "Directrice Générale",
+        role: "CEO et Fondatrice",
         perimetre: "Stratégie globale, développement institutionnel et partenariats."
       },
       {

@@ -61,5 +61,6 @@ export const SECTION_LIST = [
   { id: "voksia", index: "04", name: "VOKSIA" },
   { id: "preuves", index: "05", name: "Preuves" },
   { id: "a-propos", index: "06", name: "À propos" },
-  { id: "contact", index: "07", name: "Diagnostic" }
+  { id: "partenaires", index: "07", name: "Partenaires" },
+  { id: "contact", index: "08", name: "Diagnostic" }
 ];

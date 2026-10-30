@@ -103,3 +103,21 @@ body {
 .max-prose-width {
   max-width: 66ch;
 }
+
+@keyframes partner-marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.animate-partner-marquee {
+  animation: partner-marquee 28s linear infinite;
+  will-change: transform;
+}
+
+.animate-partner-marquee:hover {
+  animation-play-state: paused;
+}

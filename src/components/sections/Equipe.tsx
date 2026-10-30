@@ -8,7 +8,7 @@ export const Equipe: React.FC = () => {
 
   const teamPhotos = [
     '/Mame Diarra Bousso Diop.jpg',
-    '/Vieux Moussa Diédhiou.JPG',
+    '/Vieux_Moussa_Diedhiou.jpg',
     '/Ousmane Biteye.jpeg'
   ];
 

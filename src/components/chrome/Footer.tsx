@@ -54,6 +54,11 @@ export const Footer: React.FC = () => {
                 </a>
               </li>
               <li>
+                <a href="#partenaires" className="hover:text-[#FE640E] transition-colors">
+                  Nos partenaires
+                </a>
+              </li>
+              <li>
                 <a href="#contact" className="text-[#FE640E] font-medium hover:underline flex items-center gap-1">
                   <span>Demander un diagnostic</span>
                   <ArrowUpRight className="w-3.5 h-3.5" />
@@ -70,7 +75,7 @@ export const Footer: React.FC = () => {
             <div className="space-y-3 text-sm text-[#EFEAE2]/80">
               <div className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-[#FE640E] shrink-0 mt-0.5" />
-                <span>KTM Skills Academy | Dakar, Castor, Lot 11</span>
+                <span>KTM Skills Academy | Dakar</span>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-[#FE640E] shrink-0" />

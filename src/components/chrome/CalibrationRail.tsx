@@ -63,10 +63,10 @@ export const CalibrationRail: React.FC = () => {
           <div className="absolute top-[80%] left-[-4px] w-2 h-[1px] bg-[#7C8894]/40" />
         </div>
 
-        {/* Bottom tick mark + total sections count (07) */}
+        {/* Bottom tick mark + total sections count (08) */}
         <div className="flex flex-col items-center gap-2">
           <span className="font-mono text-[10px] text-[#7C8894]">
-            07
+            08
           </span>
           <div className="w-3 h-[1px] bg-[#7C8894]" />
         </div>
