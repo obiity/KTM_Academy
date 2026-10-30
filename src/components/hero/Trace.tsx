@@ -54,7 +54,7 @@ export const Trace: React.FC = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-full min-h-[360px] sm:min-h-[440px] lg:min-h-[500px] flex items-center justify-center lg:pl-6 xl:pl-8 overflow-visible">
+    <div className="relative w-full lg:w-[114%] xl:w-[118%] h-full min-h-[380px] sm:min-h-[460px] lg:min-h-[540px] flex items-center justify-center lg:pl-2 overflow-visible">
       {/* Background Grid Motif */}
       <div
         className="absolute inset-0 opacity-20 pointer-events-none"
@@ -105,7 +105,7 @@ export const Trace: React.FC = () => {
           <path
             d={HERO_TRACE_PATH}
             stroke="#28323C"
-            strokeWidth="11"
+            strokeWidth="13"
             strokeLinecap="round"
             fill="none"
             opacity={0.85}
@@ -116,7 +116,7 @@ export const Trace: React.FC = () => {
             ref={pathRef}
             d={HERO_TRACE_PATH}
             stroke="url(#traceGradient)"
-            strokeWidth="8.5"
+            strokeWidth="10"
             strokeLinecap="round"
             fill="none"
             filter="url(#neonGlow)"
@@ -128,17 +128,17 @@ export const Trace: React.FC = () => {
 
           {/* Travelling Laser Energy Orb */}
           <g transform={`translate(${orbPos.x}, ${orbPos.y})`}>
-            <circle r="32" fill="#FE640E" opacity="0.5" filter="url(#orbGlow)" />
-            <circle r="18" fill="#FF8812" opacity="0.9" filter="url(#orbGlow)" />
-            <circle r="7.5" fill="#EFEAE2" />
+            <circle r="36" fill="#FE640E" opacity="0.5" filter="url(#orbGlow)" />
+            <circle r="20" fill="#FF8812" opacity="0.9" filter="url(#orbGlow)" />
+            <circle r="8.5" fill="#EFEAE2" />
           </g>
 
           {/* 4 Stage Nodes (Apprendre, Jouer, Pratiquer, Maîtriser) */}
           {HERO_MARKERS.map((m: MarkerPoint, idx: number) => {
             const isActive = activeStep === idx;
             const stepNum = `0${idx + 1}`;
-            const labelOffsetY = idx % 2 === 0 ? -56 : 52;
-            const labelOffsetX = idx === 0 ? 22 : idx === 3 ? -16 : 0;
+            const labelOffsetY = idx % 2 === 0 ? -62 : 58;
+            const labelOffsetX = idx === 0 ? 30 : idx === 3 ? -28 : 0;
 
             return (
               <g
@@ -149,10 +149,10 @@ export const Trace: React.FC = () => {
                 {/* Outer Pulse Wave when Active */}
                 {isActive && (
                   <circle
-                    r="40"
+                    r="44"
                     fill="none"
                     stroke="#FE640E"
-                    strokeWidth="3"
+                    strokeWidth="3.5"
                     opacity="0.85"
                     className="animate-ping"
                   />
@@ -160,17 +160,17 @@ export const Trace: React.FC = () => {
 
                 {/* Central Node Circle */}
                 <circle
-                  r={isActive ? 24 : 15}
+                  r={isActive ? 27 : 17}
                   fill={isActive ? '#FE640E' : '#28323C'}
                   stroke={isActive ? '#EFEAE2' : '#5C7C93'}
-                  strokeWidth={isActive ? '4.5' : '3'}
+                  strokeWidth={isActive ? '5' : '3.5'}
                   filter={isActive ? 'url(#neonGlow)' : undefined}
                   className="transition-all duration-300"
                 />
 
                 {/* Node Center Dot */}
                 <circle
-                  r={isActive ? 7.5 : 5}
+                  r={isActive ? 8.5 : 5.5}
                   fill={isActive ? '#EFEAE2' : '#7C8894'}
                   className="transition-all duration-300"
                 />
@@ -182,24 +182,24 @@ export const Trace: React.FC = () => {
                 >
                   {/* High Contrast Card Background */}
                   <rect
-                    x="-106"
-                    y="-28"
-                    width="212"
-                    height="56"
+                    x="-117"
+                    y="-31"
+                    width="234"
+                    height="62"
                     rx="8"
                     fill={isActive ? '#0C1116' : '#151A20'}
                     stroke={isActive ? '#FE640E' : '#28323C'}
-                    strokeWidth={isActive ? '3' : '2'}
-                    opacity={isActive ? '0.98' : '0.92'}
+                    strokeWidth={isActive ? '3.5' : '2'}
+                    opacity={isActive ? '0.98' : '0.94'}
                     filter={isActive ? 'url(#neonGlow)' : undefined}
                   />
 
                   {/* Step Number (01, 02, 03, 04) */}
                   <text
-                    x="-88"
-                    y="7"
+                    x="-98"
+                    y="8"
                     fill={isActive ? '#FE640E' : '#5C7C93'}
-                    fontSize="17"
+                    fontSize="19"
                     fontWeight="800"
                     fontFamily="var(--font-martian), monospace"
                   >
@@ -208,10 +208,10 @@ export const Trace: React.FC = () => {
 
                   {/* Step Name (Apprendre, Jouer, Pratiquer, Maîtriser) */}
                   <text
-                    x="-48"
-                    y="7"
+                    x="-54"
+                    y="8"
                     fill={isActive ? '#EFEAE2' : '#9AA6B2'}
-                    fontSize="20"
+                    fontSize="22"
                     fontWeight={isActive ? '800' : '600'}
                     fontFamily="var(--font-archivo), sans-serif"
                     letterSpacing="-0.01em"

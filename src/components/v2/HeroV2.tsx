@@ -31,8 +31,8 @@ export const HeroV2: React.FC = () => {
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[450px] bg-[#FE640E]/[0.06] rounded-full blur-[140px] pointer-events-none z-[1]" />
       <div className="absolute -top-24 right-0 w-[500px] h-[400px] bg-[#5C7C93]/[0.08] rounded-full blur-[120px] pointer-events-none z-[1]" />
 
-      <div className="max-w-[1380px] mx-auto px-6 lg:px-12 w-full relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-12 xl:gap-16 items-center">
+      <div className="max-w-[1440px] mx-auto px-6 lg:px-10 xl:px-12 w-full relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 xl:gap-12 items-center">
           
           {/* Left Column (6 cols): Editorial Content Conforming to Brief V2 */}
           <div className="lg:col-span-6 space-y-6 relative z-20">
@@ -86,7 +86,7 @@ export const HeroV2: React.FC = () => {
           </div>
 
           {/* Right Column (6 cols): Animated Interactive Trace (Apprendre, Jouer, Pratiquer, Maîtriser) */}
-          <div className="lg:col-span-6 flex items-center justify-center relative">
+          <div className="lg:col-span-6 flex items-center justify-start relative lg:-mt-16 xl:-mt-20">
             <Trace />
           </div>
 
