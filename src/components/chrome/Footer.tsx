@@ -30,7 +30,7 @@ export const Footer: React.FC = () => {
             <ul className="space-y-3 text-sm text-[#EFEAE2]/80">
               <li>
                 <a href="#hero" className="hover:text-[#FE640E] transition-colors">
-                  Accueil (Promesse)
+                  Accueil
                 </a>
               </li>
               <li>
